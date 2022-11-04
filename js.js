@@ -18,6 +18,8 @@ $(document).ready(function(){
     dots: true,
     infinite: false,
     speed: 300,
+    autoplay: true,
+    autoplaySpeed: 2000,
     slidesToShow: 5,
     slidesToScroll: 2,
     prevArrow: '<button><i class="fa-solid fa-chevron-left"></i></button>',
@@ -42,7 +44,7 @@ $(document).ready(function(){
       {
         breakpoint: 575,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1
         }
       }

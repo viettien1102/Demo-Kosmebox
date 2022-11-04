@@ -66,35 +66,38 @@ header{
    position: relative;
    width: 100%;
    padding-left: 7px;
-   padding-top: 24px;
    height: 65px;
+   display: flex;
    align-items: center;
    
 }
 .search input{
-    position: relative;
+    /* position: relative; */
     color: black;
     float: left;
     font-size: 14px;
-    width: 90%;
-    height: 100%;
+    width: 100%;
     max-width: 100%;
     margin: 0;
-    padding: 0;
-    padding-left: 10px;
+    padding: 10px;
     border-radius: 20px ;
     border: 1px solid  #ED145B;  
 }
 .search button{
     position: absolute;
-    left: 300px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
     width: 35px;
     height: 35px;
     background: transparent;
     border: none;
     color:  rgb(237, 20, 91);
 }
-
+/* .search > button > svg{
+    position: absolute;
+    left: 0px;
+} */
 .heading{
     position: relative;
     padding-left:21px ;
@@ -117,22 +120,26 @@ header{
 }
 .menu-shopping{
     padding-left: 8.5rem;
+    position: relative;
 }
 .menu-shopping svg{
     color: #ED145B;
-    position: relative;
 }
 .menu-shopping span{
     background:  #ED145B;
     position: absolute;
     line-height: 19px;
-    right: 220px;
+    right: 0px;
     z-index: 100;
     padding: 0px 5px;
     font-size: 16px;
     color: aliceblue;
     border-radius: 10px;
    
+}
+
+.plus{
+    display: none;
 }
 
 /* menu-below */
@@ -182,7 +189,7 @@ header{
     top: 0;
     right: 0;
     left: 0;
-    padding-right: 40px !important ;
+    /* padding-right: 40px !important ; */
     /* padding-left: 30px !important ; */
     width: 100%;
     z-index: 1030;
@@ -239,7 +246,7 @@ nav{
 }
 .supper-menu > li > a{
     font-weight: bold;
-    font-size: 18px;
+    font-size: 17px;
     text-transform: none;
     color: white;
     line-height: 28px;
@@ -338,6 +345,8 @@ nav{
     color: #ED145B;
 } 
 
+
+
 @media only screen and (max-width:992px) {
     .menu-top{
         display: none;
@@ -355,6 +364,9 @@ nav{
         width: 100%;
         height: auto;
 
+    }
+    .plus{
+        display: block;
     }
     .tong-togg{
         display: block;
@@ -556,7 +568,6 @@ nav{
         display: none;
     }
 }
-
 /* banner */
 #banner{
     background: #F7F7F7;
